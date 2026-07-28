@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="id" data-theme="midnight">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Lobby</title>
+  <meta name="description" content="Lobby game modern dengan daftar beberapa game HTML, tema elegan, dan penyimpanan local storage." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nameModal" class="name-modal">
+  <div class="name-box">
+    <h2>Selamat Datang 👋</h2>
+    <p>Masukkan nama untuk melanjutkan.</p>
+
+    <input
+      id="nameInput"
+      type="text"
+      placeholder="Nama kamu"
+      maxlength="20"
+      autocomplete="off"
+    >
+
+    <button id="continueBtn">Lanjut</button>
+  </div>
+</div>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">
+  <img src="https://avatars.githubusercontent.com/u/308199074?v=4" alt="Kicaw kicaw, kicaw maniac. Wkwkwk">
+</div>
+        <div>
+          <h1>Game HTML</h1>
+          <p id="welcomeText">Selamat datang, Player</p>
+        </div>
+      </div>  <div class="chip-row">
+    <div class="chip">⚡ Modern Lobby</div>
+    <div class="chip">🎮 HTML Games</div>
+    <div class="chip">✨ Elegant UI</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-card">
+    <div class="eyebrow">🎯 Kumpulan game HTML pilihan</div>
+    <h2>Mainkan game favoritmu dalam satu <span>lobby keren</span>.</h2>
+    <p>
+      Tampilan ini dibuat untuk menampilkan beberapa game HTML dalam satu tempat.     
+    </p>
+
+    <div class="hero-actions">
+      <a class="action-btn primary" href="#games">Lihat Game</a>
+      <button class="action-btn" id="shuffleBtn" type="button">Acak Urutan</button>
+      <button class="action-btn" id="resetThemeBtn" type="button">Tema Default</button>
+    </div>
+
+    <div class="theme-group" id="themeGroup">
+      <button class="theme-btn" data-theme="midnight" type="button">Midnight</button>
+      <button class="theme-btn" data-theme="nebula" type="button">Nebula</button>
+      <button class="theme-btn" data-theme="forest" type="button">Forest</button>
+      <button class="theme-btn" data-theme="sunset" type="button">Sunset</button>
+      <button class="theme-btn" data-theme="lavender" type="button">Lavender</button>
+    </div>
+  </div>
+
+  <aside class="panel">
+    <div class="profile">
+      <div class="avatar" id="avatarBox">C</div>
+      <div>
+        <strong id="userName">Captain_Z</strong>
+        <small id="userInfo">Ready to play</small>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span>Total Game</span>
+        <b id="gameCount">0</b>
+      </div>
+      <div class="stat">
+        <span>Tema Aktif</span>
+        <b id="activeTheme">Midnight</b>
+      </div>
+      <div class="stat">
+        <span>Mode</span>
+        <b>Kumpulan beberapa game</b>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<section class="section-head" id="games">
+  <div>
+    <h3>Game Library</h3>
+    <p>Pilih game, buka file HTML-nya, atau ubah tautannya ke project kamu sendiri.</p>
+  </div>
+
+  <div class="toolbar">
+    <input class="search" id="searchInput" type="search" placeholder="Cari game..." />
+  </div>
+</section>
+
+<div class="empty" id="emptyState">Game tidak ditemukan.</div>
+<main class="games" id="gameGrid"></main>
+
+<div class="footer">
+  <a >Game lainnya akan muncul disini</a><br>
+  <a style="font-size:10px; color: #a6a6a6;">Powered by Captain_Z MD</a>
+</div>
+
+  </div>  
+  <script src="gmmnu.menu"></script>
+  <script src="script.js"></script>
+    </body>
+</html>
