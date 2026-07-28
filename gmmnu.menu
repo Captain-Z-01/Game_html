@@ -1,0 +1,21 @@
+    
+    const defaultGames = [
+      {
+        name: "QuizHub",
+        theme: "Edu",
+        icon: "🎓",
+        desc: "Game kuis santai untuk belajar sambil main. Cocok untuk pelajar.",
+        file: "https://captain-z-01.github.io/QuizHub/",
+        tags: ["Edukasi", "Santai", "Cepat"],
+        image: "image/QuizHub/quizhub.jpg", 
+      },
+      {
+        name: "TRXrevolution",
+        theme: "TRXrevolution",
+        icon: "🎮",
+        desc: "Game yang dikembangkan oleh tim TRXrevolution",
+        file: "https://trxrevolution.github.io/Game-html-TRXrevolution/",
+        tags: [" Other menus", "Html", "Fun"],
+        image: "image/TRXrevolution/TRXrevolution.jpg"
+      },      
+    ];
