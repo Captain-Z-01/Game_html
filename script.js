@@ -60,7 +60,7 @@
 
     function getStoredName() {
       const saved = localStorage.getItem(STORAGE_NAME);
-      return saved && saved.trim() ? saved.trim() : "Captain_Z";
+      return saved && saved.trim() ? saved.trim() : "Teman";
     }
 
     function getStoredTheme() {
