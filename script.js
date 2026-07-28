@@ -60,16 +60,34 @@ const shuffleBtn = document.getElementById("shuffleBtn");
 const resetThemeBtn = document.getElementById("resetThemeBtn");
 
 const bannedNames = new Set([
-  "admin",
-  "administrator",
-  "owner",
-  "system",
-  "root",
-  "moderator",
-  "null",
-  "undefined",
-  "superuser",
-  "guest"
+   // Indonesia - sangat umum
+  "anjing", "asu", "bangsat", "bajingan", "kontol", "memek",
+  "ngentot", "goblok", "tolol", "idiot", "bodoh", "bego",
+  "tai", "tahi", "jancok", "jancuk", "jembut", "pepek",
+  "pepek", "sundal", "lonte", "pelacur", "pecun", "kampret",
+  "keparat", "sialan", "laknat", "terkutuk", "brengsek",
+  "bejat", "dungu", "dablek", "edan", "gila", "sinting",
+  "cok", "cuk", "muke", "mukim", "membabi", "babi",
+  "bajingan", "celeng", "setan", "iblis", "kampungan",
+  "sampah", "busuk", "jorok", "nista", "hina", "biadab",
+  "bedebah", "kurangajar", "kurang ajar", "brengsek",
+  "goblok", "tolol", "bego", "cupu", "cupu", "kere",
+  "sok", "sok pinter", "sok tau", "sok tahu", "norak",
+  "kampret", "bangsat", "asu", "tai", "tahi", "jancuk",
+
+  // Indonesia - variasi/ejaan yang sering dipakai
+  "anjg", "anjgk", "bjng", "bgst", "kont*l", "kntl",
+  "memk", "ngntot", "ngent*t", "gblk", "tlol", "idiot",
+  "bgo", "bego", "janc*k", "janc0k", "pep*k", "lonteh",
+  "sundel", "sundal", "perek", "peler", "peler", "peler",
+
+  // English
+  "fuck", "fucking", "fucker", "bitch", "bastard", "asshole",
+  "shit", "bullshit", "dumbass", "prick", "dick", "cunt",
+  "whore", "slut", "moron", "retard", "stupid", "idiot",
+
+  // Tambahan umum
+  "kampungan", "norak", "noraks", "caper", "sok tau", "sok pinter"
 ]);
 
 const sourceGames = typeof defaultGames !== "undefined" ? defaultGames : [];
