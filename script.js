@@ -1,7 +1,7 @@
     function svgDataUri(svg) {
       return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg.trim());
     }
-
+ 
     function bannerSvg({ title, subtitle, accent, accent2, icon, pattern }) {
       return svgDataUri(`
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="${title}">
@@ -55,9 +55,31 @@
     const themeButtons = [...document.querySelectorAll(".theme-btn")];
     const shuffleBtn = document.getElementById("shuffleBtn");
     const resetThemeBtn = document.getElementById("resetThemeBtn");
+    const modal = document.getElementById("nameModal");
+    const input = document.getElementById("nameInput");
+    const btn = document.getElementById("continueBtn");
+
+    const saved = localStorage.getItem(STORAGE_NAME);
 
     let games = [...defaultGames];
+    if (saved && saved.trim()) {
+    modal.classList.add("hide");
+} else {
+    input.focus();
 
+    btn.onclick = () => {
+        const name = input.value.trim();
+
+        if (!name) {
+            input.focus();
+            return;
+        }
+
+        localStorage.setItem(STORAGE_NAME, name);
+        modal.classList.add("hide");
+        setUser();
+    };
+    }
     function getStoredName() {
       const saved = localStorage.getItem(STORAGE_NAME);
       return saved && saved.trim() ? saved.trim() : "Teman";
