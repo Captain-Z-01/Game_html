@@ -18,4 +18,13 @@
         tags: [" Other menus", "Html", "Fun"],
         image: "image/TRXrevolution/TRXrevolution.jpg"
       },      
+      {
+        name: "Teka-Teki Digital",
+        theme: "Puzzle",
+        icon: "🧩",
+        desc: "Asah logika dan strategi lewat berbagai teka-teki digital yang seru dan interaktif.",
+        file: "https://raka579.github.io/Teka-Teki-Digital-Simulasi/",
+        tags: ["Puzzle", "Interaktif", "Logika"],
+        image: "image/Teka-Teki-Digital-Simulasi/banner.jpg",
+       },
     ];
